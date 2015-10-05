@@ -1,6 +1,6 @@
 {
   "name": "postcss-unnth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Replace :nth-child selectors with :first-child+ selectors",
   "keywords": [
     "postcss",
