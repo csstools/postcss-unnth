@@ -1,0 +1,27 @@
+:nth-child(1) {
+	color: red;
+}
+
+p:nth-child(1) {
+	color: red;
+}
+
+.foo:nth-child(1) {
+	color: red;
+}
+
+.before1 .before2 > :nth-child(1) > .during3 {
+	color: red;
+}
+
+.before1 .before2 > :nth-child(2) > .during3 {
+	color: red;
+}
+
+.before1 .before2 > :nth-child(3) > .during3 {
+	color: red;
+}
+
+.before1 .before2 > .during1:nth-child(4).during2 > .during3 {
+	color: red;
+}

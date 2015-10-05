@@ -1,0 +1,27 @@
+:first-child {
+	color: red;
+}
+
+p:first-child {
+	color: red;
+}
+
+.foo:first-child {
+	color: red;
+}
+
+.before1 .before2 > :first-child > .during3 {
+	color: red;
+}
+
+.before1 .before2 > :first-child + * > .during3 {
+	color: red;
+}
+
+.before1 .before2 > :first-child + * + * > .during3 {
+	color: red;
+}
+
+.before1 .before2 > :first-child + * + * + .during1.during2 > .during3 {
+	color: red;
+}
