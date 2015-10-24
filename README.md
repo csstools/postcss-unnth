@@ -2,7 +2,7 @@
 
 <img align="right" width="135" height="95" src="http://postcss.github.io/postcss/logo-leftp.png" title="Philosopher’s stone, logo of PostCSS">
 
-[UnNth] is a [PostCSS] plugin that replaces `:nth-child` selectors with `:first-child+` selectors. This can be useful when outputting CSS for old browsers like Internet Explorer 8.
+[UnNth] replaces `:nth-child` selectors with `:first-child` selectors. This can be useful when outputting CSS for older browsers like Internet Explorer 8.
 
 ```css
 /* before */
@@ -19,8 +19,6 @@
 ```
 
 ## Usage
-
-Follow these steps to use [UnNth].
 
 Add [UnNth] to your build tool:
 

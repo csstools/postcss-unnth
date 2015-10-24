@@ -1,6 +1,6 @@
 {
   "name": "postcss-unnth",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Replace :nth-child selectors with :first-child+ selectors",
   "keywords": [
     "postcss",
@@ -25,17 +25,18 @@
   },
   "homepage": "https://github.com/jonathantneal/postcss-unnth",
   "dependencies": {
-    "postcss": "^5.0.4",
+    "postcss": "^5.0.10",
     "postcss-selector-parser": "^1.3.0"
   },
   "devDependencies": {
-    "chai": "^3.2.0",
-    "gulp": "^3.9.0",
-    "gulp-eslint": "^1.0.0",
-    "gulp-mocha": "^2.1.3"
+    "eslint": "^1.7.3",
+    "tap-spec": "^4.1.0",
+    "tape": "^4.2.2"
   },
   "scripts": {
-    "test": "gulp"
+    "lint": "eslint . --ignore-path .gitignore",
+    "test-fixtures": "tape test/*.js | tap-spec",
+    "test": "npm run lint && npm run test-fixtures"
   },
   "engines": {
     "iojs": ">=2.0.0",
