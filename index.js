@@ -29,6 +29,8 @@ module.exports = postcss.plugin('postcss-unnth', function () {
 										$3 = $1;
 										$2 = 'n';
 										$1 = '0';
+									} else if ($2 == 'n') {
+										firstChild = '*';
 									}
 
 									$1 = parseFloat($1) || 0;
